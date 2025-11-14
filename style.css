@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+ /* body{
+    overflow: hidden;
+ } */
+
+.navbar {
+    display:flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 2rem; 
+    z-index: 100;
+    position: relative;
+
+}
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-weight: medium;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.hero{
+    min-height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5%;
+    align-items: center;
+    text-align: center;
+    position: relative;
+   
+}
+
+
+.box-2{
+    position: relative;
+}
+.main-img{
+    z-index: 100;
+    position: relative;
+    height: 25rem;
+    width: 25rem;
+    transform: translate(-50px, -58px)
+}
+.circle{
+    height: 15rem;
+    width: 12rem;
+    border-radius: 50%;
+    /* background: #FDC435; */
+    background: whitesmoke;
+    position: absolute;
+    transform: translate(-110px, -180px);
+    /* transform: translateX(20px); */
+    z-index: 101;
+}
+.banner-img{
+    position: absolute;
+    top: -124px;
+    right: -8px;
+    z-index: 10;
+
+}
+
+.box-1{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem 3%;
+    margin-top: -3rem;
+}
+
+
+.box-1 span{
+    font-family: "Roboto";
+    font-size: 1.4rem
+}
+
+.box-1 h1{
+    color: #FDC435;
+    font-family: "Pacifico";
+    font-size: 2.5rem;
+}
+
+.box-1 p{
+    font-family: "Roboto";
+    color: #3f3f3f;
+}
+
+
+.brief{
+    height: 100vh;
+    position: relative;
+    display: block;
+    padding: 1rem 5%;
+    /* display: flex; */
+    overflow: hidden;
+}
+
+.abt-circle{
+    height: 500px;
+    width: 30rem;
+    /* border-radius: 50%; */
+    background: #fdc4353b;
+    animation: bounce 3s ease-in-out;
+    animation-iteration-count: infinite;
+    position: absolute;
+    z-index: 10;
+}
+
+.content-1{
+    z-index: 101;
+}
+.content-2{
+    transform: translate(30rem, -28rem);
+    padding: 1rem 5%;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.content-2 span{
+     font-family: "Roboto";
+    font-size: 1.4rem
+}
+
+.content-2 p{
+     font-family: "Roboto";
+    color: #3f3f3f;
+    line-height: 1.5
+}
+.content-2 a {
+    color: #FDC435;
+    transition-delay: 0.1s;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.content-2 a:hover{
+    font-size: 1.1rem;
+}
+
+@keyframes bounce{
+    0%{
+        /* transform: scale(0.5); */
+        width: 0px
+    }
+    50%{
+        /* transform: scale(1.075); */
+        width: 500px;
+    }
+    100%{
+        /* transform: scale(0.5); */
+        width: 0px;
+    }
+}
+
+.about-section {
+  padding: 60px;
+  background-color: #f9fafc;
+  text-align: center;
+}
+
+.about-section h1 {
+  font-size: 2em;
+  color: #222;
+}
+.mission-section {
+  padding: 60px;
+  background-color: #f2fac8;
+  text-align: center;
+}
+
+.mission-section h1 {
+  font-size: 2em;
+  color: #222;
+}
+
+.mission-section p {
+  width: 70%;
+  margin: 20px auto;
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #444;
+}
+
+
+.about-section p {
+  width: 70%;
+  margin: 20px auto;
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #444;
+}
+.contact {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 20px;
+}
+
+.contact nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    background-color: #007bff;
+    padding: 10px 20px;
+    margin: 0;
+}
+
+.contact nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.contact h1,
+.contact h2,
+.contact p {
+    text-align: center;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact input[type="submit"],
+.contact input[type="reset"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.contact input[type="submit"]:hover,
+.contact input[type="reset"]:hover {
+    background-color: #0056b3;
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 60px 10%;
+}
+
+.contact-info {
+    max-width: 400px;
+}
+
+.contact-info h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    color: #111e03;
+    line-height: 1.6;
+}
+
+.info-box {
+    margin-top: 20px;
+    padding: 20px;
+    background: #fafafa;
+    border-left: 4px solid #bacd5a;
+    border-radius: 8px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contact-card {
+    background: white;
+    padding: 35px;
+    width: 450px;
+    border-radius: 14px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contact-card h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+    color: #c0cd5a;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.form-group {
+    margin-bottom: 20px
+}
+
+.form-group label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 7px
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 15px;
+}
+
+.gender-box,
+.interest-box {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: #6a5acd;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #5a4ac5;
+}
+
+/* Make it responsive */
+@media (max-width: 900px) {
+    .contact-wrapper {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 5%;
+    }
+
+    .contact-card {
+        width: 100%;
+    }
+}
+
+body {
+    background: #f9f7ff;
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.fashion-container,
+.child-labour,
+.poem {
+    column-count: 3;             
+    column-gap: 20px;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 20px;
+}
+
+@media (max-width: 900px) {
+    .fashion-container,
+    .child-labour,
+    .poem {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 500px) {
+    .fashion-container,
+    .child-labour,
+    .poem {
+        column-count: 1;
+    }
+}
+
+.gallery-item,
+.square {
+    width: 100%;
+    margin-bottom: 20px;
+    break-inside: avoid;                /* prevents breaking in Pinterest layout */
+    border-radius: 14px;
+    overflow: hidden;
+    background: #fff;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    animation: fadeIn 1s ease forwards;
+    transform: translateY(20px);
+    opacity: 0;
+}
+
+.gallery-item img,
+.square img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 14px;
+    transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img,
+.square:hover img {
+    transform: scale(1.07);
+}
+
+.gallery-item:hover,
+.square:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+    transition: 0.3s;
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 12px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0));
+    backdrop-filter: blur(1px);
+    border-radius: 0 0 14px 14px;
+    line-height: 1.3;
+}
+
+/* Poem captions: Soft white background */
+.poem .caption {
+    position: relative;
+    background: rgba(233, 243, 197, 0.92);
+    color: #222;
+    font-weight: 600;
+    backdrop-filter: blur(5px);
+    margin-top: -10px;
+    border-radius: 0 0 14px 14px;
+}
+
+/* ---- Fade-in Animation ---- */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.mission-video{
+
+    height: 500px;
+    width: 500px;
+
+}
+.mission-video video{
+    height: 100%;
+    width: 100%;
+}
+.Aboutme-video{
+
+    height: 500px;
+    width: 500px;
+
+}
+
+
+
+.Aboutme-video video{
+    width: 100%;
+    height: 100%;
+}
+.about-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+   
+}
+.about-content{
+     flex: 1 1 50%;
+}
+.about-image{
+    height: 500px;
+    width: 1000px;
+    flex: 1 1 50%;
+}
+.about-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+/* .logo{
+    color: red; 
+    animation-duration: 5s;
+} */
+
+
+.whatsapp{
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem; 
+}
